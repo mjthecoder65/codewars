@@ -22,7 +22,7 @@ def move_zeros(array):
             zeros.append(number)
         else:
             res.append(number)
-
+            
     res.extend(zeros)
 
     return res
