@@ -29,11 +29,8 @@ from collections import Counter, defaultdict
 #         return counter['n'] == counter['s'] and counter['w'] == counter["e"]
 
 
-
 def is_valid_walk(walk):
-    if len(walk) != 10:
-        return False
-    else:
-        return walk.count("n") == walk.count("s") and walk.count('e') == walk.count('w')
+    return len(walk) == 10 and walk.count("n") == walk.count("s") \
+             and walk.count('e') == walk.count('w')
 
         
