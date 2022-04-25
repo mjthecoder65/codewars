@@ -1,5 +1,6 @@
 
-def to_hex(number: int):
+def to_hex(number: int) -> str:
+    """Convert an integer to hexadecimal with two digits"""
     if number <= 0:
         return "00"
     elif number < 10:
@@ -13,5 +14,7 @@ def to_hex(number: int):
         return result * 2
     return result
 
-def rgb(red, green, blue):
+# convert RGB to Hex color system
+def rgb(red: int, green: int, blue: int) -> str:
+    """Convert RGB color format to hex representation"""
     return to_hex(red) + to_hex(green) + to_hex(blue)
